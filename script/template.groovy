@@ -15,13 +15,13 @@ pipeline {
         }
          stage('deploy_to dev'){
          steps {
-         sh 'sshpass -p root scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/template.txt root@35.225.78.93:/tmp'
+         sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/template.txt root@35.225.78.93:/tmp'
                                
       }
    }
          stage('deploy_to qa'){
          steps {
-         sh 'sshpass -p root scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/template.txt root@34.69.151.189:/tmp'
+         sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/template.txt root@34.69.151.189:/tmp'
                                
       }
    }
