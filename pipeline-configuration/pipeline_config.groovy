@@ -1,5 +1,5 @@
 libraries{
-    merge = true
+    merge = false
     sonarqube
     junit
     jinja2
