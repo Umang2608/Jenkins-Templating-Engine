@@ -9,6 +9,6 @@ stages{
         build
         static_code_analysis
         junit
-        jinja2
+        jinja
     }
 }
