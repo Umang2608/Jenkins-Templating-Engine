@@ -11,7 +11,7 @@ stages{
         junit
         jinja
     }
-     Dev_Deployment{
+     dev_deployment{
       steps {
         retry(x) { // It Retries x number of times mentioned until its successful
           sh './dev-deploy.sh'
