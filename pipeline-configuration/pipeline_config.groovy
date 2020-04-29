@@ -11,16 +11,11 @@ stages{
         junit
         jinja
     }
-}
-pipeline {
-  agent any
-  stages {
-    stage('Dev Deployment') {
+     Dev_Deployment{
       steps {
         retry(x) { // It Retries x number of times mentioned until its successful
           sh './dev-deploy.sh'
         }
       }
     }
-  }
 }
