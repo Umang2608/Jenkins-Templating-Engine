@@ -12,3 +12,15 @@ stages{
         jinja
     }
 }
+pipeline {
+  agent any
+  stages {
+    stage('Dev Deployment') {
+      steps {
+        retry(x) { // It Retries x number of times mentioned until its successful
+          sh './dev-deploy.sh'
+        }
+      }
+    }
+  }
+}
