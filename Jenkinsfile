@@ -1,2 +1,3 @@
-continuous_integration()
-dev_deployment()
+unit_test()
+build()
+static_code_analysis()
