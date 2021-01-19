@@ -7,3 +7,19 @@
 libraries{
   maven
 }
+
+application_environments{
+  dev{} 
+}
+
+steps{
+  step_from_config{
+    image = "maven"
+    command = "mvn -v"
+  }
+  unit_test
+}
+
+template_methods{
+  passthrough
+}
